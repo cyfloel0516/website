@@ -1,4 +1,6 @@
 var express = require('express');
+var mustache = require('mustache')
+
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
@@ -17,7 +19,7 @@ app.get('/', function(request, response) {
 	  }
 	};
  
-	var output = response.render("index.html", view);
+	var output = mustache.render("{{title}} spends {{calc}}", view);
 });
 
 app.listen(app.get('port'), function() {
