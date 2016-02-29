@@ -6,8 +6,18 @@ app.set('port', (process.env.PORT || 5000));
 //app.use(express.static(__dirname + '/public'));
 
 
+app.set('view engine', 'mustache');
+
+
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+	  var view = {
+	  title: "Joe",
+	  calc: function () {
+	    return 2 + 4;
+	  }
+	};
+ 
+	var output = Mustache.render("{{title}} spends {{calc}}", view);
 });
 
 app.listen(app.get('port'), function() {
