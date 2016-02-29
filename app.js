@@ -20,6 +20,8 @@ app.get('/', function(request, response) {
 	};
  
 	var output = mustache.render("{{title}} spends {{calc}}", view);
+
+
 });
 
 app.listen(app.get('port'), function() {
