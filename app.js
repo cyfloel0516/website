@@ -12,16 +12,7 @@ app.set('view engine', 'mustache');
 
 
 app.get('/', function(request, response) {
-	  var view = {
-	  title: "Joe",
-	  calc: function () {
-	    return 2 + 4;
-	  }
-	};
- 
-	var output = mustache.render("{{title}} spends {{calc}}", view);
-
-
+	response.send('Hello World!');
 });
 
 app.listen(app.get('port'), function() {
