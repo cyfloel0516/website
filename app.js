@@ -17,7 +17,7 @@ app.get('/', function(request, response) {
 	  }
 	};
  
-	var output = Mustache.render("{{title}} spends {{calc}}", view);
+	var output = response.render("{{title}} spends {{calc}}", view);
 });
 
 app.listen(app.get('port'), function() {
