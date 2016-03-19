@@ -1,19 +1,17 @@
 var express = require('express');
-var mustache = require('mustache')
 
 var app = express();
 
+//Port configuration for heroku
 app.set('port', (process.env.PORT || 5000));
 
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
+app.set('view engine', 'jade');
 
-app.set('view engine', 'mustache');
+//All controllers are under controller's folder
+app.use(require('./controllers'))
 
-
-app.get('/', function(request, response) {
-	response.send('Hello World!');
-});
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
