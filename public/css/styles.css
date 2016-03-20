@@ -1,0 +1,75 @@
+#background{
+	background-image:url(../images/background.png); 
+	position:absolute;
+ 	top:0; 
+ 	bottom:0; 
+ 	left:0;
+ 	right:0; 
+ 	z-index:-1
+}
+
+#top-nav{
+	border-radius: 0;
+}
+
+#top-nav .navbar-brand{
+	font-size:22px;
+	color:white;
+}
+
+.nav-item .glyphicon{
+	margin-right:5px;
+}
+
+
+#contact-info-wrapper{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align:center;
+	width:480px;
+	height:200px;
+	margin: auto;
+}
+
+#my-name{
+	color:white;
+	font-size:36px;
+	margin-bottom:0;
+}
+#my-introduction{
+	color:#ccc;
+	font-size:14px;
+}
+
+#contact-me-wrapper{
+	margin-top:30px;
+}
+.contact-me{
+	width:48px; 
+	height:48px; 
+	border-radius:4px;
+	display:inline-block;
+	position:relative;
+	margin-right:10px;
+}
+
+.contact-me a{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.contact-me-facebook{
+	background-image:url(../images/facebook_48.png); 
+}
+.contact-me-linkedin{
+	background-image:url(../images/linkedin_48.png); 
+}
+.contact-me-gmail{
+	background-image:url(../images/gmail_48.png); 
+}
