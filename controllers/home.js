@@ -3,7 +3,7 @@ var express = require('express')
 
 router.get('/', function (req, res) {
   //res.send("12345");
-  res.render('index', { title: 'Hey', message: 'Hello there!'});
+  res.render('index');
 });
 
 module.exports = router
