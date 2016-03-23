@@ -1,0 +1,13 @@
+extends ./layout
+
+block css
+	link(href='css/works.css', rel='stylesheet')
+
+block variables
+	- var selected = "My Works"
+
+block body
+	div#works-wrapper
+		p.works-year="2016"
+		div.works
+			img(src='images/edms.png',width=550, height=300)

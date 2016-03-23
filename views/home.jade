@@ -1,0 +1,41 @@
+extends ./layout.jade
+
+block css
+	link(href='css/home.css', rel='stylesheet')
+block body
+	div#home-wrapper
+		div#main-wrapper
+			div#contact-info-wrapper.row
+				p#my-name="Hey! I'm Junkai Yang."
+				div#contact-me-wrapper
+					span.contact-me.contact-me-facebook
+					span.contact-me.contact-me-linkedin
+					span.contact-me.contact-me-github
+					span.contact-me.contact-me-gmail
+
+			div#more-info-wrapper
+				span.glyphicon.glyphicon-menu-down(aria-hidden="true")
+
+		div#aboutme-wrapper.part-wrapper.part-gray
+			div.par-content
+				p.part-title="Someting about me"
+				p.part-text="A passionate full-stack engineer interested in designing and developing all kinds of software. Currently study in Syracuse University for my master degree in computer science and expect to graduate in May 2017. Web are my favorite but also like to touch other various technologies."
+				div.part-learn-more
+					a.btn.btn-default.btn-lg="LEARN MORE"
+
+
+		div#portofolio.part-wrapper
+			div.part-content
+				p.part-title="Portofolio"
+				div.portofolio-wrapper
+					div.portofolio
+						div.portofolio-image
+							img(src="images/edms.png", width=380, height=220)
+						div.portofolio-content
+							h4.portofolio-title="787 Engineering Data Management System"
+							p.portofolio-subtitle="Xiamen Airlines, 2014"
+							ul
+								li="Developer team leader"
+								li="C# ASP.net MVC, JavaScript, Python, HTML5, CSS, LESS, jQuery, BootStrap..."
+								li="Cooperate with Boeing 787 e-Enabing team"
+								li="Visit Boeing Lab in Seattle for testing and validating"

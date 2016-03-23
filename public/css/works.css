@@ -1,0 +1,18 @@
+.works-year{
+	color: white;
+	border-bottom:1px solid gray;
+}
+
+.works{
+	width:950px;
+	height:310px;
+	padding:4px;
+	border-radius:2px;
+	border:1px solid #1C2842;
+	background-color:#1F2B45;
+	box-shadow: 0px 0px 2px 2px #151B33;
+}
+
+.works img{
+	border-radius:4px;
+}
