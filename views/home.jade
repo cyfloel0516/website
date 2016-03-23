@@ -28,14 +28,37 @@ block body
 			div.part-content
 				p.part-title="Portofolio"
 				div.portofolio-wrapper
-					div.portofolio
-						div.portofolio-image
-							img(src="images/edms.png", width=380, height=220)
-						div.portofolio-content
+					
+					div.portofolio.row
+						div.portofolio-image-wrapper.col-md-6
+							img.portofolio-image(src="images/edms_screenshot.png")
+						div.portofolio-content-wrapper.col-md-6
 							h4.portofolio-title="787 Engineering Data Management System"
 							p.portofolio-subtitle="Xiamen Airlines, 2014"
 							ul
 								li="Developer team leader"
+								li="For 787 maintenance and engineering management"
 								li="C# ASP.net MVC, JavaScript, Python, HTML5, CSS, LESS, jQuery, BootStrap..."
 								li="Cooperate with Boeing 787 e-Enabing team"
 								li="Visit Boeing Lab in Seattle for testing and validating"
+
+					div.portofolio.row
+						div.portofolio-image-wrapper.col-md-6
+							img.portofolio-image(src="images/caption_screenshot.png")
+						div.portofolio-content-wrapper.col-md-6
+							h4.portofolio-title="Captioning System"
+							p.portofolio-subtitle="Syracuse University"
+							ul
+								li="Full-stack Developer"
+								li="For students and instructors to correct captions, make bookmarks, write comments and communicate with others"
+								li="Docker, PHP, Laraval, JavaScript, HTML5, CSS, jQuery, BootStrap..."
+								li="Interface with Google, YouTube and BlackBoard"
+				div.part-learn-more
+					a.btn.btn-default.btn-lg="LEARN MORE"
+
+		div#footer.part-wrapper.part-gray
+			div.part-content
+				div
+					a(target="_blank", href="https://github.com/cyfloel0516/website")="Github"
+					span=" for this site"
+				p="Design and develop by Junkai Yang."
