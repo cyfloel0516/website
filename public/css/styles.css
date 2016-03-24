@@ -37,3 +37,17 @@
 	margin-right:5px;
 }
 
+#footer-wrapper{
+	background-color:#EEE;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+#footer{
+	max-width:1160px;
+	margin:auto;
+}
+
+#footer .contact-link{
+	margin-right:16px;
+}
