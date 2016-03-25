@@ -2,6 +2,7 @@ extends ./layout.jade
 
 block css
 	link(href='css/home.css', rel='stylesheet')
+	link(href='css/works.css', rel='stylesheet')
 block body
 	div#home-wrapper
 		div#main-wrapper
@@ -24,11 +25,10 @@ block body
 					a.btn.btn-default.btn-lg="LEARN MORE"
 
 
-		div#portofolio.part-wrapper
+		div#portofolio-container.part-wrapper
 			div.part-content
 				p.part-title="Portofolio"
 				div.portofolio-wrapper
-					
 					div.portofolio.row
 						div.portofolio-image-wrapper.col-md-6
 							img.portofolio-image(src="images/edms_screenshot.png")
