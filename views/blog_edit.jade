@@ -1,0 +1,13 @@
+extends ./layout.jade
+
+block advanced_js	
+	script(src='/ckeditor/ckeditor.js')
+
+block body
+	form
+		textarea#editor1(name='editor1', rows='10', cols='80')
+			| This is my textarea to be replaced with CKEditor.
+		script(type="text/javascript").
+			// Replace the <textarea id="editor1"> with a CKEditor
+			// instance, using default configuration.
+			CKEDITOR.replace( 'editor1' );
