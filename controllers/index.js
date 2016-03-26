@@ -2,7 +2,7 @@ var express = require('express')
   , router = express.Router();
 
 router.use('/', require('./home'))
-router.use('/works', require('./works'))
-router.use('/blogs', require('./blogs'))
+router.use('/work', require('./work'))
+router.use('/blog', require('./blog'))
 
 module.exports = router

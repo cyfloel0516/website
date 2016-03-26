@@ -2,9 +2,13 @@ var express = require('express')
   , router = express.Router()
 
 router.get('/edit', function (req, res) {
+	debugger;
   res.render('blog_edit');
 });
 
+router.post('/', function(req, res){
+	console.info(req.body);
+});
 
 
 var mongoose = require('mongoose');

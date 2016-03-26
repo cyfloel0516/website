@@ -4,10 +4,22 @@ block advanced_js
 	script(src='/ckeditor/ckeditor.js')
 
 block body
-	form
-		textarea#editor1(name='editor1', rows='10', cols='80')
-			| This is my textarea to be replaced with CKEditor.
-		script(type="text/javascript").
-			// Replace the <textarea id="editor1"> with a CKEditor
-			// instance, using default configuration.
-			CKEDITOR.replace( 'editor1' );
+	div.content-wrapper
+		div#title-wrapper
+			h3="Create new blog"
+		div#editor-wrapper
+			textarea#editor1(name='editor1', rows='10', cols='80')
+
+			<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+			button#submit.btn.btn-primary(type="button")="Create"
+				
+			script(type="text/javascript").
+				// Replace the <textarea id="editor1"> with a CKEditor
+				// instance, using default configuration.
+				CKEDITOR.replace( 'editor1' );
+
+				$(document).ready(function(){
+					$('#submit').click(function(){
+						$.post('/blog', {'blog': CKEDITOR.instances.editor1.getData()});
+					});
+				});
