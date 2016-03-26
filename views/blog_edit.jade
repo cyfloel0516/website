@@ -20,6 +20,10 @@ block body
 
 				$(document).ready(function(){
 					$('#submit').click(function(){
-						$.post('/blog', {'blog': CKEDITOR.instances.editor1.getData()});
+						$.ajax({
+							url: '/blog',
+							type: 'PUT',
+							data:  {'blog': CKEDITOR.instances.editor1.getData()}
+						});
 					});
 				});

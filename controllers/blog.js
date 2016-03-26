@@ -1,32 +1,34 @@
 var express = require('express')
   , router = express.Router()
 
-router.get('/edit', function (req, res) {
-	debugger;
-  res.render('blog_edit');
-});
-
-router.post('/', function(req, res){
-	console.info(req.body);
-});
-
-
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://cyfloel0516:1990516yjk@ds025239.mlab.com:25239/personal_site');
+var jsonFile = require('jsonfile')
+var dbConfig = jsonFile.readFileSync("./config/db.config");
+var Schema = mongoose.Schema;
 
-var db = mongoose.connection;
-
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  	
-  	var kittySchema = mongoose.Schema({
-	    name: String
-	});
-	var Kitten = mongoose.model('Kitten', kittySchema);
-
-	var k = new Kitten({name:'kkk'});
-	k.save();
-
+router.get('/edit', function (req, res) {
+	res.render('blog_edit');
 });
+
+router.put('/', function(req, res){
+	var db = mongoose.connection;
+	mongoose.connect(dbConfig.mongodb);
+	
+	db.once('open', function() {
+	  	var BlogsSchema = new Schema({ content: String, title: String}, 
+           { collection : 'blogs' });   // collection name
+		var Blog = mongoose.model('blogs', BlogsSchema);
+
+		var blog = new Blog({content: req.body.blog, title:'12345'});
+		blog.save();
+		console.log('finish');
+	});
+});
+
+
+
+
+
+
 
 module.exports = router
