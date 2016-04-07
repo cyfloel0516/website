@@ -1,0 +1,35 @@
+extends ../layout.jade
+block variables
+	- var selected = "My Works"
+block css
+	link(href='/css/works.css', rel='stylesheet')
+
+block body
+	div.content-wrapper
+		div#detail-header
+			div#detail-title
+				h2="CAPTIONING SYSTEM"
+			div#detail-overview
+				h3.section-title="Overview"
+				p="This website is designed and developed for instructors and studetns to manage lecture videos from YouTube and communicate with others. Moreover, users can correct captions while watching the videos."
+			div#detail-technology
+				h3.section-title="Technology"
+				p="Docker, PHP, Laraval, JavaScript, HTML5, CSS, jQuery, BootStrap"
+			div#detail-highlight
+				h3.section-title="Highlight"
+				ul
+					li="Main developer for both front and back end"
+					li="Use Google and YouTube API for user to manage the video and video captions from YouTube"
+					li="Integrate with Blackboard for user to manage lecture videos by courses"
+					li="Good accessibility, allow user to record voice comments and listen to the voice comments with the YouTube voice track"
+					li="Use Docker to manage dependencies and simplify deployment process"
+
+			div#detail-screenshot-wrapper
+				h3.section-title="Screenshot"
+				each val in [1, 2]
+					div.detail-screenshot
+						img(src="/images/work_details/personal_website_2/" + val + ".png")
+			div#detail-more
+				div
+					a(href="https://datascience.ischool.syr.edu").visit="VISIT IT"
+					//a.visit="GITHUB"
