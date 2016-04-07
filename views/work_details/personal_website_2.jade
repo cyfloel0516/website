@@ -1,0 +1,37 @@
+extends ../layout.jade
+block variables
+	- var selected = "My Works"
+block css
+	link(href='/css/works.css', rel='stylesheet')
+
+block body
+	div.content-wrapper
+		div#detail-header
+			div#detail-title
+				h2="PERSONAL WEBSITE 2.0"
+			div#detail-overview
+				h3.section-title="Overview"
+				p="I haven't used my another blog which is built on WorkPress on 2012 for a long while since I started my previous work. I realize that was a bad idea because I don't have a good place to put my things together. Thus I decide to write a new website for myself. This website should contain my blogs, my works and some information about me."
+			div#detail-technology
+				h3.section-title="Technology"
+				p="Node.js, Express, MongoDB, JavaScript, Heroku, HTML5, CSS, Jade, SAAS, jQuery, BootStrap, Google Analytics"
+			div#detail-highlight
+				h3.section-title="Highlight"
+				ul
+					li="Designed, developed and maintained by myself"
+					li="Responsive design, make it mobile friendly"
+					li="Include a blog system for me to manage my blogs"
+			div#detail-screenshot-wrapper
+				h3.section-title="Screenshot"
+				each val in [1, 2]
+					div.detail-screenshot
+						img(src="/images/work_details/personal_website_2/" + val + ".png")
+			div#detail-more
+				div
+					a.visit="VISIT IT"
+					a.visit="GITHUB"
+
+
+
+					
+		

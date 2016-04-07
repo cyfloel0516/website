@@ -31,28 +31,34 @@ block body
 				div.portofolio-wrapper
 					div.portofolio.row
 						div.portofolio-image-wrapper.col-md-6
-							img.portofolio-image(src="images/edms_screenshot.png")
-						div.portofolio-content-wrapper.col-md-6
-							h4.portofolio-title="787 Engineering Data Management System"
-							p.portofolio-subtitle="Xiamen Airlines, 2014"
-							ul
-								li="Developer team leader"
-								li="For 787 maintenance and engineering management"
-								li="C# ASP.net MVC, JavaScript, Python, HTML5, CSS, LESS, jQuery, BootStrap..."
-								li="Cooperate with Boeing 787 e-Enabing team"
-								li="Visit Boeing Lab in Seattle for testing and validating"
-
-					div.portofolio.row
-						div.portofolio-image-wrapper.col-md-6
 							img.portofolio-image(src="images/caption_screenshot.png")
+							a.seemore="SEE MORE"
+							//div.portofolio-seemore
+								
 						div.portofolio-content-wrapper.col-md-6
-							h4.portofolio-title="Captioning System"
+							h4.portofolio-title
+								a(href="works_detail/captioning_system")="Captioning System"
 							p.portofolio-subtitle="Syracuse University"
 							ul
-								li="Full-stack Developer"
+								li="Full-Stack Developer"
 								li="For students and instructors to correct captions, make bookmarks, write comments and communicate with others"
 								li="Docker, PHP, Laraval, JavaScript, HTML5, CSS, jQuery, BootStrap..."
 								li="Interface with Google, YouTube and BlackBoard"
+				div.portofolio.row
+					div.portofolio-image-wrapper.col-md-6
+						img.portofolio-image(src="images/edms_screenshot.png")
+						//div.portofolio-seemore
+							a.seemore="SEE MORE"
+					div.portofolio-content-wrapper.col-md-6
+						h4.portofolio-title
+							a(href="works/edms")="787 Engineering Data Management System"
+						p.portofolio-subtitle="Xiamen Airlines, 2014"
+						ul
+							li="Developer team leader"
+							li="For 787 maintenance and engineering management"
+							li="C# ASP.net MVC, JavaScript, Python, HTML5, CSS, LESS, jQuery, BootStrap..."
+							li="Cooperate with Boeing 787 e-Enabing team"
+							li="Visit Boeing Lab in Seattle for testing and validating"
 				div.part-learn-more
 					a.btn.btn-default.btn-lg="LEARN MORE"
 
