@@ -9,10 +9,10 @@ block body
 			div#contact-info-wrapper.row
 				p#my-name="Hey! I'm Junkai Yang."
 				div#contact-me-wrapper
-					span.contact-me.contact-me-facebook
-					span.contact-me.contact-me-linkedin
-					span.contact-me.contact-me-github
-					span.contact-me.contact-me-gmail
+					a(href="https://www.facebook.com/profile.php?id=100003043347203&fref=nf&pnref=story", target="_blank").contact-me.contact-me-facebook
+					a(href="https://www.linkedin.com/in/junkai-yang-51468b73", target="_blank").contact-me.contact-me-linkedin
+					a(href="https://github.com/cyfloel0516", target="_blank").contact-me.contact-me-github
+					a(href="mailto:cyfloel0516@gmail.com").contact-me.contact-me-gmail
 
 			div#more-info-wrapper
 				span.glyphicon.glyphicon-menu-down(aria-hidden="true")
@@ -32,7 +32,8 @@ block body
 					div.portofolio.row
 						div.portofolio-image-wrapper.col-md-6
 							img.portofolio-image(src="images/caption_screenshot.png")
-							a.seemore="SEE MORE"
+							a(href="work/captioning_system").seemore=""
+							//a.seemore="SEE MORE"
 							//div.portofolio-seemore
 								
 						div.portofolio-content-wrapper.col-md-6
@@ -47,6 +48,7 @@ block body
 				div.portofolio.row
 					div.portofolio-image-wrapper.col-md-6
 						img.portofolio-image(src="images/edms_screenshot.png")
+						a(href="work/edms").seemore=""
 						//div.portofolio-seemore
 							a.seemore="SEE MORE"
 					div.portofolio-content-wrapper.col-md-6
@@ -60,6 +62,6 @@ block body
 							li="Cooperate with Boeing 787 e-Enabing team"
 							li="Visit Boeing Lab in Seattle for testing and validating"
 				div.part-learn-more
-					a.btn.btn-default.btn-lg="LEARN MORE"
+					a.btn.btn-default.btn-lg(href="/work")="LEARN MORE"
 
 
