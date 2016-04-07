@@ -1,0 +1,35 @@
+extends ../layout.jade
+block variables
+	- var selected = "My Works"
+block css
+	link(href='/css/works.css', rel='stylesheet')
+
+block body
+	div.content-wrapper
+		div#detail-header
+			div#detail-title
+				h2="PERSONAL WEBSITE 1.0"
+			div#detail-overview
+				h3.section-title="Overview"
+				p="I decided to have my own blog site when I as an intern in my third year of undergraduate study. So I chose WordPress, built my site and hosted it on Sina App Engine. I modified some styles and add some small functions to the original WordPress template. But I haven't post my new blog on it for a long while since I started my previous job."
+			div#detail-technology
+				h3.section-title="Technology"
+				p="PHP, MySQL, Wordpress, JavaScript, HTML5, CSS..."
+			div#detail-highlight
+				h3.section-title="Highlight"
+				ul
+					li="Developed by myself and hosted on the Sina App Engine"
+					li="Based on wordpress"
+			div#detail-screenshot-wrapper
+				h3.section-title="Screenshot"
+				each val in [1, 2, 3]
+					div.detail-screenshot
+						img(src="/images/work_details/personal_website_1/" + val + ".png")
+			div#detail-more
+				div
+					a(href="http://cyfloel0516.sinaapp.com/", target="_blank").visit="VISIT IT"
+
+
+
+					
+		

@@ -1,0 +1,37 @@
+extends ../layout.jade
+block variables
+	- var selected = "My Works"
+block css
+	link(href='/css/works.css', rel='stylesheet')
+
+block body
+	div.content-wrapper
+		div#detail-header
+			div#detail-title
+				h2="PERSONAL CALENDAR"
+			div#detail-overview
+				h3.section-title="Overview"
+				p="This website is inspired by Google's exit from China. I want user to have a better system to manage their calendar so I design and develop this website. However, after I began my last year of undergraduate study, I found that only little time left for me to continue this project. Thus, I have only finished parts of my design but it still one of my favorite projects because it is basically the first website I developed and I really learned a lot from it."
+			div#detail-technology
+				h3.section-title="Technology"
+				p="Python, Django, MySQL, JavaScript, jQuerym HTML5, CSS, LESS, BootStrap..."
+			div#detail-highlight
+				h3.section-title="Highlight"
+				ul
+					li="Designed and developed by myself"
+					li="Allow user to manage their calendar"
+					li="User can set repeat type of event based on day, week, year and repeat times"
+					li="User can have multiple calendar book and also subscribe public calendar such like holiday"
+					li="User can set different timezone for each calendar book"
+					li="Allow user to search calendar quickly"
+					li="Provide various of settings to user such like the privacy and share of calendar book, first day of week, etc.."
+
+			div#detail-screenshot-wrapper
+				h3.section-title="Screenshot"
+				each val in [1, 2, 3, 4, 5, 6]
+					div.detail-screenshot
+						img(src="/images/work_details/calendar/" + val + ".png")
+			div#detail-more
+				div
+					//a(href="https://datascience.ischool.syr.edu", target="_blank").visit="VISIT IT"
+					a(href="https://github.com/cyfloel0516/personal_calendar", target="_blank").visit="GITHUB"
