@@ -1,0 +1,40 @@
+#introduction{
+	font-size:22px;
+	color:#555;
+	margin-top:25px;
+	margin-bottom:40px;
+}
+
+.record{
+	margin-bottom:36px;
+}
+
+.section-title{
+	color: #555;
+}
+
+.record-title{
+
+}
+
+.record-name{
+	font-size:24px;
+	color:#607D8B;
+	line-height:24px;
+	vertical-align: middle;
+}
+
+.record-time{
+	margin-right:26px;
+}
+
+.record-note{
+	color: #333;
+	font-size:16px;
+	margin-bottom:12px;
+	margin-left:1px;
+}
+
+.record-text{
+	color: #333;
+}
