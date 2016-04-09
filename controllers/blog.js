@@ -6,6 +6,10 @@ var jsonFile = require('jsonfile')
 var dbConfig = jsonFile.readFileSync("./config/db.config");
 var Schema = mongoose.Schema;
 
+router.get('/', function(req, res){
+	res.render('blog');
+});
+
 router.get('/edit', function (req, res) {
 	res.render('blog_edit');
 });

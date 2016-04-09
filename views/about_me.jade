@@ -8,12 +8,25 @@ block variables
 
 block body
 	div.content-wrapper
+
 		div#introduction
 			p="I am a passionate full-stack engineer interested in designing and developing all kinds of software. I have good sense on UI/UX design and experienced in a variety of development skills. I currently study in Syracuse University for my master degree in computer science and expect to graduate in May 2017."
+			p="Check my resume here: " 
+				a.contact-link(target="_blank", href="/documents/Resume-JunkaiYang.pdf")="RESUME"
 
-		div#education.row
+		div.row.content-section
 			div.col-md-2
-				p.section-title="EXPERIENCE"
+				p.section-title="CONTACT"
+			div.col-md-10
+				a.contact-link(href="https://www.facebook.com/profile.php?id=100003043347203&fref=nf&pnref=story", target="_blank")="Facebook"
+				a.contact-link(href="https://www.linkedin.com/in/junkai-yang-51468b73", target="_blank")="LinkedIn"
+				a.contact-link(href="https://github.com/cyfloel0516", target="_blank")="Github"
+				a.contact-link(target="_blank", href="https://github.com/cyfloel0516/website")="Mail"
+				a.contact-link(target="_blank", href="/documents/Resume-JunkaiYang.pdf")="Resume"
+
+		div.row.content-section
+			div.col-md-2
+				p.section-title="EDUCATION"
 			div.col-md-10
 				div.education-record.record
 					p.record-title
@@ -27,4 +40,81 @@ block body
 						span.record-name="FuZhou University"
 						span.pull-right.record-time="2012-2015"
 					p.record-note="Bachelor's degree of Computer Science"
-					p.record-text="Courses: "
+					p.record-text="Courses: Algorithms and Data Structure, Numerical Computation, Discrete Mathematics, Object-Oriented Programming, Operating System, Principles of Database System, C# Programming, Java Programming, Web Programming, XML Programming, Software Engineering, Compiling Princples, UML, Data Communication and Computer Network..."
+
+		div.row.content-section
+			div.col-md-2
+				p.section-title="EXPERIENCE"
+			div.col-md-10
+				div.education-record.record
+					p.record-title
+						span.record-name="Social Computing Systems Lab, Syracuse University"
+						span.pull-right.record-time="2012-2015"
+					p.record-note="Research Assistant"
+					p.record-text="Help to design and develop web application on both front-end and back-end."
+
+				div.education-record.record
+					p.record-title
+						span.record-name="Xiamen Airlines, China"
+						span.pull-right.record-time="2012-2015"
+					p.record-note="Full-Stack Engineer"
+					p.record-text="Mainly focus on web application design and develop for aircraft maintenance and engineering."
+
+				div.education-record.record
+					p.record-title
+						span.record-name="HAND Corporation, Shanghai, China"
+						span.pull-right.record-time="2011"
+					p.record-note="SAP Technical Implementation Consultant Internship"
+					p.record-text="Help to develop enterprise software upon the SAP ECC6.0 platform."
+
+		div.row.content-section
+			div.col-md-2
+				p.section-title="PROJECTS"
+			div.col-md-10
+				div.education-record.record
+					p.record-title
+						span.record-name="Captioning Project"
+						span.pull-right.record-time="2015-Now"
+					p.record-note="Main developer for front-end and back-end"
+					p.record-text="Design and develop the Captioning Project. The system is designed for students and instructors to communicate with others, manage lecture videos from YouTube, make bookmarks on video timeline and correct captions."
+
+				div.education-record.record
+					p.record-title
+						span.record-name="787 Engineering Data Management System"
+						span.pull-right.record-time="2014-2015"
+					p.record-note="Main developer for front-end and back-end"
+					p.record-text="Cooperated with Boeing 787 e-Enabling team and participated in the whole process of design and development suck like requirement study, prototype design, development and test. This system is designed for engineering data management of 787 airplanes."
+
+				div.education-record.record
+					p.record-title
+						span.record-name="SAP-based Workflow Engine"
+						span.pull-right.record-time="2011"
+					p.record-note="Developer"
+					p.record-text="This engine is based on SAP ECC 6.0 platform and designed for simple workflow process management. It simplify some workflow configuration and make it easy to integrated into other modules."
+
+		div.row.content-section
+			div.col-md-2
+				p.section-title="SKILLS"
+			div.col-md-10
+				div.education-record.record
+					p.record-title
+						span.record-name="Programming Language"
+					p.record-text="JavaScript, PHP, Python, C#, C++, Java, HTML5, CSS, SQL, XML, ABAP"
+					p.record-title
+						span.record-name="Database"
+					p.record-text="MS SQL Server, MySQL, PostgreSQL, MongoDB, SQLite"
+					p.record-title
+						span.record-name="Framework"
+					p.record-text="ASP.Net MVC, Node.js, Django, jQuery, Backbone, Bootstrap, Laravel, Jade, Mustache, Express, AngularJS, LESS, SASS"
+					p.record-title
+						span.record-name="Others"
+					p.record-text="RESTful API, SOAP, WCF, UML, Docker, Vagrant, SVN, Git, AWS, SAP, IIS, Apache"
+
+
+
+
+
+
+
+
+
