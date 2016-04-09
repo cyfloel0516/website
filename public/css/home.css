@@ -72,8 +72,8 @@
 }
 
 .part-wrapper{
-	padding-top:25px;
-	padding-bottom:25px;
+	padding-top:50px;
+	padding-bottom:50px;
 }
 .part-content{
 	max-width:1160px;
@@ -86,7 +86,7 @@
 }
 
 .part-text{
-	font-size:16px;
+	font-size:18px;
 }
 
 .part-learn-more{
